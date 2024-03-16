@@ -1,0 +1,109 @@
+/* Estilos base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-top: 48px;
+  background-color: #000000;
+  color: #f1f1f1;
+  height: 100vh;
+}
+
+.container h1 {
+  color: red;
+  border: 1px solid #f1f1f1;
+}
+
+.timer {
+  display: flex;
+  font-size: 55px;
+  font-weight: 300;
+  color: yellow;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: royalblue;
+  min-width: 90px;
+}
+
+.separator {
+  padding: 0 10px;
+  color: #f1f1f1;
+}
+
+#milliseconds {
+  font-size: 55px;
+  color: #6cf31d;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 1px solid #e1e7de;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+#startBtn {
+  background-color: #095066;
+  color: #f1f1f1;
+}
+
+#pauseBtn,
+#resumeBtn {
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .timer {
+    font-size: 40px;
+  }
+h1 {
+  font-size: 55px;
+  color: #6cf31d;
+  text-align: center;
+}
+  .btn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  #milliseconds {
+    font-size: 30px;
+    color: #6cf31d;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timer {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
